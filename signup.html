@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <script src="https://use.fontawesome.com/1184194b70.js"></script>
+    <link rel="stylesheet" href="/asset/css/login-style.css">
+    <title>Sign Up</title>
+</head>
+<body>
+    <div class="container1">
+        <div class="img2">
+          <img src="/asset/img/signup-img.svg" alt="signup-image">
+        </div>
+        <div class="box2">
+            <form id="signUpForm" method="POST" enctype="multipart/form-data">
+                <h1>Create Account</h1>
+                <div class="input-box">
+                    <label for="fullname">Full Name</label><br>
+                    <input type="text" id="fullname" class="input3" autofocus/>
+                    <small>
+                        Error Message
+                    </small>
+                </div>
+                
+            
+                <div class="input-box" >
+                    <label for="username">User Name</label><br>
+                    <input type="text" id="username" class="input3"autofocus />
+                    <small>
+                        Error Message
+                    </small>
+                </div>
+                
+                <div class="input-box">
+                    <label for="phone">Phone Number</label><br>
+                    <input type="number" id="phone-number" class="input3" autofocus/>
+                    <small>Error Message</small>
+                </div>
+                
+                <div class="input-box">
+                    <label for="email">Email Address</label><br>
+                    <input type="email"id="email" class="input3" autofocus/>
+                    <small>Error Message</small> 
+                </div>
+               
+                <div class="input-box">
+                    <label for="password">Password</label><br>
+                    <input type="password" id="password" class="input3" minlength="8" autofocus /> <span> <i class="fa fa-eye" id="toggle-password"></i> </span>
+                    <small>Error Message</small>
+                </div>
+                
+            
+                <div class="input-box">
+                    <label for="confirm"> Confirm Password</label><br>
+                    <input type="password" id="confirm" class="input3" minlength="8" autofocus /> <span> <i class="fa fa-eye" 
+                    id="toggle-password2"></i> </span>
+                    <small>Error Message</small>
+                </div>
+                
+            
+                <div class="submission">
+                    <button class="btn-sign" type="submit">Sign Up</button><br>
+                    <span>I'm already a member, <a href="/src/auth/login.html" target="_blank">Sign In</a></span>
+                </div>
+                
+            </form>
+        </div>
+    </div>
+    <script src="/asset/js/signup.js"></script>
+</body>
+</html>

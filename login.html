@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <script src="https://use.fontawesome.com/1184194b70.js"></script>
+    <link rel="stylesheet" href="/asset/css/login-style.css" type="text/css">
+    <title>Log In</title>
+</head>
+<body>
+    <div class="container1">
+        <div class="img1">
+          <img src="/asset/img/login-img.svg" alt="login-image">
+        </div>
+        <div class="box1">
+            <form id="LoginForm" method="POST">
+                <div class="input-box">
+                    <label for="email">Email Address</label><br>
+                    <input type="email"id="email" class="input1" autofocus/>
+                </div>
+                <div class="validation-messages">
+                    <span class="hide2"></span> 
+                </div>  
+
+                <div class="input-box">
+                    <label for="password">Password</label><br>
+                    <input type="password" id="password" class="input1" minlength="6" autofocus /> <span> <i class="fa fa-eye" 
+                    id="toggle-password"></i> </span>
+                </div>
+                <div class="validation-messages">
+                    <span class="hide2"></span>
+                </div>
+                <div class="login-questions">
+                    <div class="checkbox"><input type="checkbox"  value="isRemember" name="rember" id="remember-me"> <label>Remember Me</label></span></div>
+                    <span><a href="/src/auth/forgot-pwsd.html" target="_blank">Forgot Password?</a></span>
+                </div>
+            
+                <div class="submission">
+                    <button class="btn-sign"type="submit" id="LogIn">Log In</button> <br>
+                    <span>New User? Register your account now <i class="fa fa-arrow-right" aria-hidden="true"></i></span>
+                </div>
+            </form>
+                </div>
+        </div>
+    </div>
+    <script src="/asset/js/login.js"></script>
+</body>
+</html>

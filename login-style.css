@@ -1,0 +1,315 @@
+:root {
+  /* dark shades of primary color*/
+  --red: #A60000;
+  --yellow: #FCE302;
+  --lighter-yellow: #FCE303;
+  --pink: #FFB8B8;
+  --grey: #F1F1F1;
+  --darker-grey: #E5E5E5;
+  --clr-white: #ffffff;
+  --clr-black: #000000;
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+.container1 {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.container3 {
+  background-color: var(--grey);
+  justify-content: space-around;
+}
+
+.box1, .box2{
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  background-color: var(--grey);
+  height: 40%;
+}
+.box1 {
+  background-color: var(--clr-white);
+  height: 50%;
+  margin: 20px;
+}
+.box2 {
+  background-color: var(--grey);
+  width: 100%;
+  height: 100%;
+  border-radius: 30px 30px 0 0;
+  
+
+}
+h1 {
+  color: var(--clr-black);
+  
+}
+
+img {
+  width: 60%;
+  height: 70%;
+  margin-left: 15%;
+  margin-top: 5%;
+}
+
+.img1 {
+  background-color: var(--clr-white);
+  height: 40%;
+}
+.img2 {
+  height: 40%;
+}
+
+.img3{
+  width: 70%;
+  background-color: var(--clr-white);
+  border-radius: 10px;
+  margin: auto;
+  
+}
+
+.img3 img {
+  border: 3px solid var(--red);
+  border-radius: 10px;
+  width: 70%;
+  height: 90%;
+}
+
+button {
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px;
+  border: none;
+  width: 60%;
+  margin-bottom: 30px;
+}
+
+.btn-sign {
+  color: var(--clr-black);
+  background-color: var(--yellow);
+  width: 70%;
+}
+
+.btn-log {
+  color: var(--clr-black);
+  background-color: var(--yellow);
+  width: 70%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+
+input{
+  border-radius: 10px;
+  outline: none;
+  padding: 10px;
+  color: black;
+  width: 90%;
+  margin-top: 10px;
+}
+
+
+.input-box {
+  margin-bottom: 10px;
+}
+
+small {
+  visibility: hidden;
+  margin-left: 65%;
+}
+.input-box.error small {
+  color: #e74c3c;
+  visibility: visible;
+}
+
+
+.input-box.success input {
+  border-color: #2ecc71;
+}
+
+.input-box.error input {
+  border-color: #e74c3c;
+}
+
+.input1 {
+  background-color: var(--clr-white);
+  border: 5px solid gray;
+}
+.input2 {
+  background-color: var(--yellow);
+}
+.input3 {
+  border: 2px solid var(--grey);
+  color: var(--clr-black);
+  border-radius: 0;
+}
+.input4 {
+  background-color: var(--clr-white);
+  border: 3px solid var(--red);
+}
+
+
+.checkbox {
+  display: flex;
+}
+
+.fa-eye {
+  position: absolute;
+  left: 85%;
+  margin-top: 20px;
+  color: var(--red);
+}
+
+.login-questions {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  
+}
+.fa-square-o {
+  margin-right: 10px;
+}
+.box2 i{
+  color: var(--yellow);
+}
+
+
+.submission {
+  margin-top: 50px;
+}
+.submission-1 {
+  margin-top: 20px;
+}
+.submission-1 button {
+  margin-bottom: 10px;
+}
+.submission a, .submission-1 a{
+  color: var(--red);
+  font-weight: 900;
+  
+}
+.span {
+margin: auto;
+}
+a {
+  text-decoration: none;
+  color: var(--clr-black);
+}
+
+.product-info {
+  margin-top: 30px;
+  width: 100%;
+}
+
+.name{
+  border: 1px solid var(--red);
+  border-radius: 10px;
+  outline: none;
+  padding: 10px;
+  color: var(--clr-black);
+  background-color: var(--darker-grey);
+  width: 80%;
+  margin-top: 10px;
+  margin-left: 10px;
+  font-weight: 900;
+}
+
+.container3 button {
+  padding: 10px;
+  background-color: var(--yellow);
+  width: 30%;
+  right: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.verify-group {
+  margin-top: 20px;
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+}
+.small-box {
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--grey);
+  box-shadow: 0 0 5px 0;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+@media screen and (min-width: 768px) {
+  .btn-log, .btn-sign {
+    width: 30%;
+  }
+  .container1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .img1, .img2 {
+    height: 100%;
+    width: 40%;
+  }
+  .img1 img{
+    width: 90%;
+    margin-left: 2%;
+  }
+  .box1{
+    width: 50%;
+    margin: auto;
+  }
+  .box2 {
+    height: 100%;
+    border-radius: 0;
+    margin: 0;
+  }
+  .img2, .box2 {
+    width: 50%;
+  }
+  .img2 img {
+    width: 87%;
+    height: 80%;
+  }
+ 
+ .fa-eye {
+    left: 90%;
+  }
+
+  .box-3 {
+    display: flex;
+    flex-direction: row;
+  }
+  .wrap {
+    width: 70%;
+    margin: auto;
+  }
+  .product-info{
+    margin: auto;
+    width: 50%;
+  }
+  .name {
+    margin-top: 15px;
+  }
+  .verify-group {
+    margin-top: 20px;
+  }
+  .small-box {
+  width: 40px;
+  height: 40px;
+  font-size: 2rem;
+}
+}

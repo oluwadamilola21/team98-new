@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <script src="https://use.fontawesome.com/1184194b70.js"></script>
+    <link rel="stylesheet" href="/asset/css/login-style.css" type="text/css">
+    <title>Create Password</title>
+</head>
+<body>
+    <div class="container1">
+        <div class="img1">
+          <img src="/asset/img/create-pswd-img.svg" alt="login-image">
+        </div>
+        <div class="box1">
+            <form id="LoginForm" method="POST" enctype="multipart/form-data">
+                <h1>Create New Password</h1>
+                <h3>Enter A New  Password of Your Choice</h3>
+                <div class="input-box">
+                    <label for="password">Password</label><br>
+                    <input type="password" id="password" name="pwd1" class="input4" minlength="6" required autofocus /> <span> <i class="fa fa-eye" id="toggle-password"></i> </span>
+                </div>
+                <div class="validation-messages">
+                    <span class="hide5"></span>
+                </div>
+            
+                <div class="input-box">
+                    <label for="confirm"> Confirm Password</label><br>
+                    <input type="password" id="confirm" class="input4" minlength="6" required autofocus /> <span> <i class="fa fa-eye" id="toggle-password2"></i> </span>
+                </div>
+                <div class="validation-messages">
+                    <span class="hide6"></span>
+                </div>
+            
+                <div class="submission">
+                    <button class="btn-sign"type="submit" id="LogIn">Submit</button>
+                </div>
+            </form>
+                </div>
+        </div>
+    </div>
+    <script src="/asset/js/create-pwsd.js"></script>
+</body>
+</html>
